@@ -1,0 +1,58 @@
+body {
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* -------- 1. HEADER SECTION --------- */
+header{
+    box-shadow: 0 0 10px 0 grey;
+    display: flex;
+    padding: 12px;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    z-index: 9999;
+    background-color: white;
+
+}
+
+nav {
+  text-align: center;
+  padding: 0 140px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+nav ul {
+  display: block;
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+
+
+  text-align: center;
+  line-height: normal;
+  text-decoration: none;
+  padding: 20px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+}
+li a:hover {
+  color: #5db255;
+}
