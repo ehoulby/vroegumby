@@ -8,7 +8,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-/* -------- 1. HEADER SECTION --------- */
+/* -------- 1. Navigationsbar --------- */
 header{
     box-shadow: 0 0 10px 0 grey;
     display: flex;
@@ -55,4 +55,50 @@ nav ul li a {
 }
 li a:hover {
   color: #5db255;
+}
+
+/* -------- 2. Transport --------- */
+
+
+#transportoverskrift{
+  font-size: 33px;
+  color: 000;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+/* -------- 2. Aktiviteter --------- */
+
+#aktivitetsoverskrift{
+  font-size: 33px;
+  color: 000;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  width: 100%;
+}
+/* -------- 3. Om Vrøgum --------- */
+
+#omoverskrift{
+  font-size: 33px;
+  color: 000;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+/* -------- 4. Erhverv --------- */
+
+#erhvervoverskrift{
+  font-size: 33px;
+  color: 000;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  width: 100%;
 }
