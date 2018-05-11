@@ -102,3 +102,130 @@ li a:hover {
   text-align: center;
   width: 100%;
 }
+.transportkasser{
+  padding: 250px;
+  display: flex;
+  flex-direction: row;
+}
+.box1{
+border: 1px grey;
+width: 18%;
+font-size: 12px;
+box-shadow: 0 0 10px 0 grey;
+margin: auto;
+padding: 10px;
+text-align: center;
+}
+#bil{
+  padding-top: 10px;
+}
+
+.box2{
+border: 1px grey;
+width: 18%;
+font-size: 12px;
+box-shadow: 0 0 10px 0 grey;
+margin: auto;
+padding: 10px;
+text-align: center;
+}
+#taxa{
+  padding-top: 10px;
+}
+.box3{
+border: 1px grey;
+width: 18%;
+font-size: 12px;
+box-shadow: 0 0 10px 0 grey;
+margin: auto;
+padding: 10px;
+text-align: center;
+}
+#tog{
+  padding-top: 10px;
+}
+.transportkasser1{
+  padding-top: 250px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.box1{
+border: 1px grey;
+width: 18%;
+font-size: 12px;
+box-shadow: 0 0 10px 0 grey;
+margin: auto;
+padding: 10px;
+text-align: center;
+}
+#bil{
+  padding-top: 10px;
+}
+
+.box2{
+border: 1px grey;
+width: 18%;
+font-size: 12px;
+box-shadow: 0 0 10px 0 grey;
+margin: auto;
+padding: 10px;
+text-align: center;
+}
+#taxa{
+  padding-top: 10px;
+}
+.box3{
+border: 1px grey;
+width: 18%;
+font-size: 12px;
+box-shadow: 0 0 10px 0 grey;
+margin: auto;
+padding: 10px;
+text-align: center;
+}
+#tog{
+  padding-top: 10px;
+}
+
+.transportkasser2{
+  display: flex;
+  flex-direction: row;
+}
+.box4{
+border: 1px grey;
+width: 18%;
+font-size: 12px;
+box-shadow: 0 0 10px 0 grey;
+margin: auto;
+padding: 10px;
+text-align: center;
+}
+#cykel{
+  padding-top: 10px;
+}
+
+.box5{
+border: 1px grey;
+width: 18%;
+font-size: 12px;
+box-shadow: 0 0 10px 0 grey;
+margin: auto;
+padding: 10px;
+text-align: center;
+}
+#parkeringsplads{
+  padding-top: 10px;
+}
+.box6{
+border: 1px grey;
+width: 18%;
+font-size: 12px;
+box-shadow: 0 0 10px 0 grey;
+margin: auto;
+padding: 10px;
+text-align: center;
+}
+#camping{
+  padding-top: 10px;
+}
