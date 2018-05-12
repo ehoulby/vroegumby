@@ -103,7 +103,6 @@ li a:hover {
   width: 100%;
 }
 .transportkasser{
-  padding: 250px;
   display: flex;
   flex-direction: row;
 }
@@ -216,6 +215,7 @@ text-align: center;
 }
 #parkeringsplads{
   padding-top: 10px;
+  
 }
 .box6{
 border: 1px grey;
