@@ -68,40 +68,6 @@ li a:hover {
   text-align: center;
   width: 100%;
 }
-
-/* -------- 2. Aktiviteter --------- */
-
-#aktivitetsoverskrift{
-  font-size: 33px;
-  color: 000;
-  position: absolute;
-  top: 100px;
-  text-align: center;
-  width: 100%;
-}
-/* -------- 3. Om Vrøgum --------- */
-
-#omoverskrift{
-  font-size: 33px;
-  color: 000;
-  position: absolute;
-  top: 100px;
-  text-align: center;
-  width: 100%;
-}
-
-
-
-/* -------- 4. Erhverv --------- */
-
-#erhvervoverskrift{
-  font-size: 33px;
-  color: 000;
-  position: absolute;
-  top: 100px;
-  text-align: center;
-  width: 100%;
-}
 .transportkasser{
   display: flex;
   flex-direction: row;
@@ -215,7 +181,7 @@ text-align: center;
 }
 #parkeringsplads{
   padding-top: 10px;
-  
+
 }
 .box6{
 border: 1px grey;
@@ -228,4 +194,49 @@ text-align: center;
 }
 #camping{
   padding-top: 10px;
+}
+
+
+/* -------- 2.1 Kort --------- */
+#kort{
+  width: 60%;
+   height: 400px;
+   background-color: grey;
+   margin-left: 300px;
+   margin-top: 50px;
+ }
+
+
+/* -------- 2. Aktiviteter --------- */
+
+#aktivitetsoverskrift{
+  font-size: 33px;
+  color: 000;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  width: 100%;
+}
+/* -------- 3. Om Vrøgum --------- */
+
+#omoverskrift{
+  font-size: 33px;
+  color: 000;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+/* -------- 4. Erhverv --------- */
+
+#erhvervoverskrift{
+  font-size: 33px;
+  color: 000;
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  width: 100%;
 }
