@@ -114,7 +114,7 @@ text-align: center;
 }
 .transportkasser1{
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: row;
 
@@ -140,7 +140,8 @@ width: 280px;
 height: 210px;
 font-size: 12px;
 box-shadow: 0 0 10px 0 grey;
-margin: auto;
+margin-left: 80px;
+margin-right: 80px;
 padding: 10px;
 text-align: center;
 }
@@ -187,7 +188,8 @@ width: 280px;
 height: 210px;
 font-size: 12px;
 box-shadow: 0 0 10px 0 grey;
-margin: auto;
+margin-left: 80px;
+margin-right: 80px;
 padding: 10px;
 text-align: center;
 }
