@@ -323,3 +323,9 @@ text-align: center;
   text-align: center;
   width: 100%;
 }
+/* -------- 5. Footer --------- */
+.footer{
+  background-color: #86D37E;
+  color: white;
+  
+}
