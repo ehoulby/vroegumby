@@ -362,6 +362,17 @@ text-align: center;
 
 /* -------- 5. Footer --------- */
 .footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: #86D37E;
   color: white;
-  
+}
+.kontakt{
+  margin-left: 60px;
+  padding-top: 20px;
+}
+.icons{
+margin-right: 60px;
+padding-top: 20px;
+}
