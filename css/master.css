@@ -20,7 +20,7 @@ header{
     margin: 0;
     z-index: 9999;
     background-color: white;
-
+    top: 0;
 }
 
 nav {
@@ -219,16 +219,76 @@ text-align: center;
 }
 /* -------- 3. Om Vrøgum --------- */
 
+
 #omoverskrift{
   font-size: 33px;
   color: 000;
-  position: absolute;
-  top: 100px;
   text-align: center;
   width: 100%;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+#ballonpark, #skoven, #fiskesoe, #station, #dengamleskole {
+  position: relative;
 }
 
+#ballonparkheadline {
+  left: 30%;
+}
 
+#fiskesoeheadline{
+  left: 28%;
+}
+
+#skovheadline{
+  left: 39%;
+}
+#stationheadline{
+  left: 28%;
+}
+
+#dengamleskoleheadline {
+  left:26%;
+}
+
+.widepics {
+  width: 100%;
+  display: block;
+}
+
+.names {
+  color: white;
+  font-size: 70px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 35%;
+
+}
+
+.btn-primary {
+  position: absolute;
+      background-color: #5DB255;
+      color: white;
+      padding: 15px 70px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+      top: 65%;
+      left: 42%;
+      border: 1px solid#5DB255;
+}
+.btn-primary:hover {
+      background-color: white;
+      color: #5DB255;
+      border: 1px solid#5DB255;
+
+}
 
 /* -------- 4. Erhverv --------- */
 
