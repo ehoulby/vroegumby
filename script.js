@@ -12,8 +12,60 @@ function initMap() {
 
       window.addEventListener("click", function(event) {
           var box1 = document.querySelector('.box1');
-          if (event.target == box1) {
+          var img1 = document.querySelector('#bil')
+          var p1 = document.querySelector('#bilp')
+          if (event.target == box1 || event.target == img1 || event.target == p1) {
             window.location.href = ('bil.html')
 
+          }
+      });
+
+      window.addEventListener("click", function(event) {
+          var box2 = document.querySelector('.box2');
+          var img2 = document.querySelector('#taxa')
+          var p2 = document.querySelector('#taxap')
+          if (event.target == box2 || event.target == img2 || event.target == p2) {
+            window.location.href = ('taxa.html')
+
+          }
+      });
+
+
+      window.addEventListener("click", function(event) {
+          var box3 = document.querySelector('.box3');
+          var img3 = document.querySelector('#tog')
+          var p3 = document.querySelector('#togp')
+          if (event.target == box3 || event.target == img3 || event.target == p3) {
+            window.location.href = ('tog.html')
+
+          }
+      });
+
+
+      window.addEventListener("click", function(event) {
+          var box4 = document.querySelector('.box4');
+          var img4 = document.querySelector('#cykel')
+          var p4 = document.querySelector('#cykelp')
+          if (event.target == box4 || event.target == img4 || event.target == p4) {
+            window.location.href = ('cykel.html')
+          }
+      });
+
+      window.addEventListener("click", function(event) {
+          var box5 = document.querySelector('.box5');
+          var img5 = document.querySelector('#parkeringspladser')
+          var p5 = document.querySelector('#parkeringspladsp')
+          if (event.target == box5 || event.target == img5 || event.target == p5) {
+            window.location.href = ('parkeringspladser.html')
+
+          }
+      });
+
+      window.addEventListener("click", function(event) {
+        var box6 = document.querySelector('.box6');
+        var img6 = document.querySelector('#camping')
+        var p6 = document.querySelector('#campingp')
+        if (event.target == box6 || event.target == img6 || event.target == p6){
+            window.location.href = ('camping.html')
           }
       });
