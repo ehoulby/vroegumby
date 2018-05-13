@@ -9,3 +9,11 @@ function initMap() {
           map: map
         });
       }
+
+      window.addEventListener("click", function(event) {
+          var box1 = document.querySelector('.box1');
+          if (event.target == box1) {
+            window.location.href = ('bil.html')
+
+          }
+      });
