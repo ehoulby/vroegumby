@@ -15,7 +15,7 @@ function initMap() {
           var img1 = document.querySelector('#bil')
           var p1 = document.querySelector('#bilp')
           if (event.target == box1 || event.target == img1 || event.target == p1) {
-            window.location.href = ('bil.html')
+            window.location.href = ('transportsider/bil.html')
 
           }
       });
@@ -25,7 +25,7 @@ function initMap() {
           var img2 = document.querySelector('#taxa')
           var p2 = document.querySelector('#taxap')
           if (event.target == box2 || event.target == img2 || event.target == p2) {
-            window.location.href = ('taxa.html')
+            window.location.href = ('transportsider/taxa.html')
 
           }
       });
@@ -36,7 +36,7 @@ function initMap() {
           var img3 = document.querySelector('#tog')
           var p3 = document.querySelector('#togp')
           if (event.target == box3 || event.target == img3 || event.target == p3) {
-            window.location.href = ('tog.html')
+            window.location.href = ('transportsider/tog.html')
 
           }
       });
@@ -47,7 +47,7 @@ function initMap() {
           var img4 = document.querySelector('#cykel')
           var p4 = document.querySelector('#cykelp')
           if (event.target == box4 || event.target == img4 || event.target == p4) {
-            window.location.href = ('cykel.html')
+            window.location.href = ('transportsider/cykel.html')
           }
       });
 
@@ -56,7 +56,7 @@ function initMap() {
           var img5 = document.querySelector('#parkeringspladser')
           var p5 = document.querySelector('#parkeringspladsp')
           if (event.target == box5 || event.target == img5 || event.target == p5) {
-            window.location.href = ('parkeringspladser.html')
+            window.location.href = ('transportsider/parkeringspladser.html')
 
           }
       });
@@ -66,6 +66,6 @@ function initMap() {
         var img6 = document.querySelector('#camping')
         var p6 = document.querySelector('#campingp')
         if (event.target == box6 || event.target == img6 || event.target == p6){
-            window.location.href = ('camping.html')
+            window.location.href = ('transportsider/camping.html')
           }
       });
