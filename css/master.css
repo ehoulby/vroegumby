@@ -487,3 +487,22 @@ margin-top: -170px;
 #footerdesign{
   display: block;
 }
+/* -------- 6. Navbar på transportsider --------- */
+.navtransport{
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    background: #86D37E;
+    overflow-x: hidden;
+    top: 150px;
+    left: 20px;
+}
+.navtransport a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+.sidenav a:hover {
+    color: #5DB255;
+}
