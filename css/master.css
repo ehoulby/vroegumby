@@ -506,3 +506,14 @@ margin-top: -170px;
 .sidenav a:hover {
     color: #5DB255;
 }
+
+.navtransport ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.navtransport li a  {
+  margin-top: 40px;
+}
