@@ -69,3 +69,10 @@ function initMap() {
             window.location.href = ('transportsider/camping.html')
           }
       });
+
+      window.addEventListener("click", function(event) {
+        var btn1 = document.querySelector('#btn1')
+        if (event.target == btn1) {
+            window.location.href = ('omvroegumsider/ballonpark.html')
+          }
+      });
