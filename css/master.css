@@ -560,3 +560,18 @@ footer {
 .navtransport li a {
     margin-top: 40px;
 }
+
+.tog1{
+  font-size: 20px;
+  color: 000;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+.teksttog{
+  font-size: 18px;
+  width: 500px;
+  padding-left: 465px;
+
+}
