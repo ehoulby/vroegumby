@@ -259,22 +259,22 @@ text-align: center;
 }
 
 #ballonparkheadline {
-  left: 33%;
+  left: 30%;
 }
 
 #fiskesoeheadline{
-  left: 32%;
+  left: 28%;
 }
 
 #skovheadline{
-  left: 40%;
+  left: 39%;
 }
 #stationheadline{
-  left: 32%;
+  left: 28%;
 }
 
 #dengamleskoleheadline {
-  left:31%;
+  left:26%;
 }
 
 .widepics {
@@ -482,11 +482,8 @@ padding-top: 20px;
 
 .footerdesign {
 margin-top: -170px;
-width: 100%;
-
 }
 
 #footerdesign{
   display: block;
-  margin-left: 100px;
 }
