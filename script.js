@@ -77,30 +77,23 @@ function initMap() {
           }
       });
 
-
       var imageSlides = document.querySelectorAll('.imageslides');
       var leftArrow = document.querySelector('.arrow-left');
       var rightArrow = document.querySelector('.arrow-right');
       var activeImageSlide = 0;
 
-      reset();
 
       function reset() {
         for (var i = 0; i < imageSlides.length; i++) {
           imageSlides[i].style.display = 'none';
         }
-
-        activeImageSlide++;
-        if (activeImageSlide > imageSlides.length) {
-            activeImageSlide = 1
-        }
-
-        imageSlides[activeImageSlide-1].style.display = "block";
-        setTimeout(reset, 5000); // Change image every 2 seconds
-
       }
 
+      function startSlide() {
+        reset();
+        imageSlides[0].style.display = "block";
 
+      }
 
       function pressLeftArrow() {
         reset();
@@ -129,3 +122,8 @@ function initMap() {
           }
           pressRightArrow();
         });
+
+    startSlide();
+
+
+    
