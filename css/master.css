@@ -501,6 +501,16 @@ top: -323px;
   background: white;
   color: #86D37E;
 }
+
+/* -------- 4.1 Ballonpark underside -------- */
+#skoven{
+  width: 1200px;
+  margin: auto;
+  margin-top: 110px;
+}
+
+
+
 /* -------- 4. Erhverv --------- */
 
 #erhvervoverskrift {

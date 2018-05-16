@@ -76,7 +76,7 @@ function initMap() {
             window.location.href = ('omvroegumsider/ballonpark.html')
           }
       });
-
+/*----------------------------- SLIDESHOW BAllONPARK -------------------------------------*/
       var imageSlides = document.querySelectorAll('.imageslides');
       var leftArrow = document.querySelector('.arrow-left');
       var rightArrow = document.querySelector('.arrow-right');
@@ -125,5 +125,4 @@ function initMap() {
 
     startSlide();
 
-
-    
+/*----------------------------- SLIDESHOW SKOV -------------------------------------*/
