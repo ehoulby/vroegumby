@@ -396,12 +396,21 @@ top: -323px;
 }
 
 /* -------- 4.1 Ballonpark underside -------- */
+  .articles {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(134, 211, 126, 0.2);
+  }
+
+  #slideromvroegum {
+    margin-top: 70px;
+  }
 
   .slideshow {
-    width: 900px;
+    width: 1200px;
     position: relative;
     margin: auto;
-    margin-top: 90px;
+    margin-top: 40px;
   }
 
   .imageslides {
@@ -434,6 +443,64 @@ top: -323px;
   .arrow-left {
     left: 0;
   }
+
+  #ballonpark-headline {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    color: #107107;
+    margin: 40px 0;
+    padding-left: 30px;
+  }
+
+.inner-elements {
+  margin: 10px auto 50px auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.inner-text {
+  flex-direction: column;
+  background-color: white;
+}
+
+.paragraph-article {
+  margin: 40px 0;
+  padding: 0 30px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 200;
+  font-size: 23px;
+  line-height: 40px;
+  text-align: justify;
+}
+
+.sidebar-article {
+  background-color: #86D37E;
+  display: flex;
+  flex-direction: column;
+  width: 1500px;
+  height: 320px;
+  margin-left: 20px;
+}
+
+.sidebar-article a {
+  text-decoration: none;
+  padding: 20px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  color: white;
+}
+
+.sidebar-article a:hover {
+  background: linear-gradient(to right, #5db255, #7dc14b, #9fcf40, #c5db32, #ede623);
+}
+
+.sidebar-article a:active {
+  background: white;
+  color: #86D37E;
+}
 /* -------- 4. Erhverv --------- */
 
 #erhvervoverskrift {
