@@ -76,3 +76,50 @@ function initMap() {
             window.location.href = ('omvroegumsider/ballonpark.html')
           }
       });
+
+      var imageSlides = document.querySelectorAll('.imageslides');
+      var leftArrow = document.querySelector('.arrow-left');
+      var rightArrow = document.querySelector('.arrow-right');
+      var activeImageSlide = 0;
+
+
+      function reset() {
+        for (var i = 0; i < imageSlides.length; i++) {
+          imageSlides[i].style.display = 'none';
+        }
+      }
+
+      function startSlide() {
+        reset();
+        imageSlides[0].style.display = "block";
+      }
+
+      function pressLeftArrow() {
+        reset();
+        imageSlides[activeImageSlide - 1].style.display = 'block';
+        activeImageSlide --;
+      }
+
+      function pressRightArrow() {
+        reset();
+        imageSlides[activeImageSlide + 1].style.display = 'block';
+        activeImageSlide ++;
+      }
+
+        leftArrow.addEventListener("click", function(){
+          if (activeImageSlide == 0) {
+            activeImageSlide = imageSlides.length;
+          }
+          pressLeftArrow();
+        });
+
+        rightArrow.addEventListener("click", function(){
+          if (activeImageSlide == imageSlides.length - 1) {
+            activeImageSlide = -1;
+          }
+          pressRightArrow();
+        });
+
+
+
+    startSlide();
