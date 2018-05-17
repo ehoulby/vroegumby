@@ -463,6 +463,7 @@ top: -323px;
 .inner-text {
   flex-direction: column;
   background-color: white;
+  width: 4000px;
 }
 
 .paragraph-article {
@@ -503,7 +504,7 @@ top: -323px;
 }
 
 /* -------- 4.1 Ballonpark underside -------- */
-#skoven, #station, #fiskesoe1{
+.skoven, .station, #fiskesoe1, #dengamleskole1{
   width: 1200px;
   margin: auto;
   margin-top: 110px;
