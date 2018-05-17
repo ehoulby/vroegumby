@@ -76,3 +76,93 @@ function initMap() {
             window.location.href = ('omvroegumsider/ballonpark.html')
           }
       });
+
+      window.addEventListener("click", function(event) {
+        var btn2 = document.querySelector('#btn2')
+        if (event.target == btn2) {
+            window.location.href = ('omvroegumsider/skov.html')
+          }
+      });
+
+      window.addEventListener("click", function(event) {
+        var btn3 = document.querySelector('#btn3')
+        if (event.target == btn3) {
+            window.location.href = ('omvroegumsider/vroegumfiskesoe.html')
+          }
+      });
+
+      window.addEventListener("click", function(event) {
+        var btn4 = document.querySelector('#btn4')
+        if (event.target == btn4) {
+            window.location.href = ('omvroegumsider/vroegumstation.html')
+          }
+      });
+
+      window.addEventListener("click", function(event) {
+        var btn5 = document.querySelector('#btn5')
+        if (event.target == btn5) {
+            window.location.href = ('omvroegumsider/dengamleskole.html')
+          }
+      });
+
+
+
+
+      var imageSlides = document.querySelectorAll('.imageslides');
+      var leftArrow = document.querySelector('.arrow-left');
+      var rightArrow = document.querySelector('.arrow-right');
+      var activeImageSlide = 0;
+
+
+      function reset() {
+        for (var i = 0; i < imageSlides.length; i++) {
+          imageSlides[i].style.display = 'none';
+        }
+      }
+
+
+      function startSlide() {
+        reset();
+        imageSlides[0].style.display = "block";
+
+      }
+
+      function pressLeftArrow() {
+        reset();
+        imageSlides[activeImageSlide - 1].style.display = 'block';
+        activeImageSlide --;
+
+      }
+
+      function pressRightArrow() {
+        reset();
+        imageSlides[activeImageSlide + 1].style.display = 'block';
+        activeImageSlide ++;
+
+      }
+      if (leftArrow) {
+        leftArrow.addEventListener("click", function(){
+          if (activeImageSlide == 0) {
+            activeImageSlide = imageSlides.length;
+          }
+          pressLeftArrow();
+        });
+      }
+
+
+
+
+      if(rightArrow) {
+        rightArrow.addEventListener("click", function(){
+          if (activeImageSlide == imageSlides.length - 1) {
+            activeImageSlide = -1;
+          }
+          pressRightArrow();
+        });
+
+      }
+
+
+
+
+  startSlide();
