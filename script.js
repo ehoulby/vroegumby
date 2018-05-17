@@ -153,3 +153,31 @@ function initMap() {
         });
 
     startSlide();
+
+    window.addEventListener("click", function(event) {
+      var btn2 = document.querySelector('#btn2')
+      if (event.target == btn2) {
+          window.location.href = ('omvroegumsider/skov.html')
+        }
+    });
+
+    window.addEventListener("click", function(event) {
+      var btn3 = document.querySelector('#btn3')
+      if (event.target == btn3) {
+          window.location.href = ('omvroegumsider/vroegumfiskesoe.html')
+        }
+    });
+
+    window.addEventListener("click", function(event) {
+      var btn4 = document.querySelector('#btn4')
+      if (event.target == btn4) {
+          window.location.href = ('omvroegumsider/vroegumstation.html')
+        }
+    });
+
+    window.addEventListener("click", function(event) {
+      var btn5 = document.querySelector('#btn5')
+      if (event.target == btn5) {
+          window.location.href = ('omvroegumsider/dengamleskole.html')
+        }
+    });
