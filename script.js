@@ -77,31 +77,33 @@ function initMap() {
           }
       });
 
-
-
-
-
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-          var i;
-          var slides = document.getElementsByClassName("billede");
-          var dots = document.getElementsByClassName("dot");
-          for (i = 0; i < slides.length; i++) {
-             slides[i].style.display = "none";
+      window.addEventListener("click", function(event) {
+        var btn2 = document.querySelector('#btn2')
+        if (event.target == btn2) {
+            window.location.href = ('omvroegumsider/skov.html')
           }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
+      });
+
+      window.addEventListener("click", function(event) {
+        var btn3 = document.querySelector('#btn3')
+        if (event.target == btn3) {
+            window.location.href = ('omvroegumsider/vroegumfiskesoe.html')
           }
-          slides[slideIndex-1].style.display = "block";
-          dots[slideIndex-1].className += " active";
-          setTimeout(showSlides, 2000); s
-      }
+      });
 
+      window.addEventListener("click", function(event) {
+        var btn4 = document.querySelector('#btn4')
+        if (event.target == btn4) {
+            window.location.href = ('omvroegumsider/vroegumstation.html')
+          }
+      });
 
+      window.addEventListener("click", function(event) {
+        var btn5 = document.querySelector('#btn5')
+        if (event.target == btn5) {
+            window.location.href = ('omvroegumsider/dengamleskole.html')
+          }
+      });
 
 
 
@@ -154,30 +156,22 @@ function initMap() {
 
     startSlide();
 
-    window.addEventListener("click", function(event) {
-      var btn2 = document.querySelector('#btn2')
-      if (event.target == btn2) {
-          window.location.href = ('omvroegumsider/skov.html')
-        }
-    });
 
-    window.addEventListener("click", function(event) {
-      var btn3 = document.querySelector('#btn3')
-      if (event.target == btn3) {
-          window.location.href = ('omvroegumsider/vroegumfiskesoe.html')
-        }
-    });
+    this.slideIndex = 0;
+    this.slides = document.querySelectorAll(".billede");
 
-    window.addEventListener("click", function(event) {
-      var btn4 = document.querySelector('#btn4')
-      if (event.target == btn4) {
-          window.location.href = ('omvroegumsider/vroegumstation.html')
-        }
-    });
 
-    window.addEventListener("click", function(event) {
-      var btn5 = document.querySelector('#btn5')
-      if (event.target == btn5) {
-          window.location.href = ('omvroegumsider/dengamleskole.html')
-        }
-    });
+
+    function showSlides() {
+                for (var i = 0; i < slides.length; i++) {
+                   slides[i].style.display = "none";
+                }
+
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                  slideIndex = 1
+                }
+
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 2000);
+            }
