@@ -366,24 +366,9 @@ top: -625px;
     position: relative;
 }
 
-#ballonparkheadline {
-    left: 30%;
-}
-
-#fiskesoeheadline {
-    left: 28%;
-}
-
-#skovheadline {
-    left: 39%;
-}
-
-#stationheadline {
-    left: 28%;
-}
-
-#dengamleskoleheadline {
-    left: 26%;
+#ballonparkheadline, #fiskesoeheadline, #skovheadline, #stationheadline, #dengamleskoleheadline {
+  width: 100%;
+  text-align: center;
 }
 
 .widepics {
@@ -414,8 +399,14 @@ top: -625px;
     cursor: pointer;
     border-radius: 10px;
     top: 65%;
-    left: 42%;
     border: 1px solid#5DB255;
+}
+
+.btn-div {
+  width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-primary:hover {
@@ -425,16 +416,167 @@ top: -625px;
 }
 
 /* -------- 4.1 Ballonpark underside -------- */
+  .articles {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(134, 211, 126, 0.2);
+  }
 
-#slider, .wrap, .slide-content {
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-}
+  #slideromvroegum {
+    margin-top: 70px;
+  }
 
-.wrap {
+  .slideshow {
+    width: 1200px;
     position: relative;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  .slideshow1 {
+    margin: auto;
+    margin-top: 90px;
+    position: relative;
+  }
+
+  .imageslides {
+    animation-name: slideAnimation;
+    animation-duration: 2.5s;
+    display: none;
+  }
+
+  .imageslides2 {
+    animation-name: slideAnimation;
+    animation-duration: 2.5s;
+    display: none;
+  }
+
+  @keyframes slideAnimation {
+    from {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .arrow-left,
+  .arrow-right {
+    position: absolute;
+    top: 42%;
+    padding: 25px;
+    cursor: pointer;
+  }
+
+  .arrow-right {
+    right: 0;
+  }
+
+  .arrow-left {
+    left: 0;
+  }
+
+  .arrow-left2,
+  .arrow-right2 {
+    position: absolute;
+    top: 42%;
+    padding: 25px;
+    cursor: pointer;
+  }
+
+  .arrow-right2 {
+    right: 0;
+  }
+
+  .arrow-left2{
+    left: 0;
+  }
+
+  #index-headline {
+    position: absolute;
+    top: 33%;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    color: #86D37E;
+  }
+
+  #article-headline {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    color: #107107;
+    margin: 40px 0;
+    padding-left: 30px;
+  }
+
+.inner-elements {
+  margin: 10px auto 50px auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
 }
+
+#elemwithpics {
+  margin-top: 70px;
+}
+
+.inner-text {
+  flex-direction: column;
+  background-color: white;
+  width: 4000px;
+}
+
+.paragraph-article {
+  margin: 40px 0;
+  padding: 0 30px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 200;
+  font-size: 23px;
+  line-height: 40px;
+  text-align: justify;
+}
+
+.sidebar-article {
+  background-color: #86D37E;
+  display: flex;
+  flex-direction: column;
+  width: 1500px;
+  height: 320px;
+  margin-left: 20px;
+}
+
+.sidebar-article a {
+  text-decoration: none;
+  padding: 20px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  color: white;
+}
+
+.sidebar-article a:hover {
+  background: linear-gradient(to right, #5db255, #7dc14b, #9fcf40, #c5db32, #ede623);
+}
+
+.sidebar-article a:active {
+  background: white;
+  color: #86D37E;
+}
+
+/* -------- 4.1 Ballonpark underside -------- */
+.skoven, .station, #fiskesoe1, #dengamleskole1{
+  width: 1200px;
+  margin: auto;
+  margin-top: 110px;
+}
+
+.billede {
+  animation-name: slideAnimation;
+  animation-duration: 2.5s;
+}
+
+
 
 /* -------- 4. Erhverv --------- */
 
@@ -651,23 +793,18 @@ footer {
     padding-left: 465px;
 }
 .bil1{
-  font-size: 20px;
-  color: 000;
-  margin-top: 150px;
-  margin-bottom: 50px;
-  text-align: center;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+    margin: 110px auto 50px auto;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+  }
 
-}
 #tekstbil{
   font-size: 18px;
   width: 500px;
   padding-left: 465px;
 }
 .maps{
-  padding-left: 430px;
   display: flex;
   flex-direction: column;
 }
@@ -678,5 +815,44 @@ footer {
   margin-top: 150px;
   margin-bottom: 50px;
   text-align: center;
-  width: 100%;
+  width: 40%;
+  margin-left: 400px;
+}
+
+.cykel1{
+  font-size: 20px;
+  color: 000;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 40%;
+  margin-left: 400px;
+}
+/* -------- 6. Navbar på transportsider --------- */
+#nyhederoverskrift {
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  margin-top: 69px auto 20px auto;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 20s;
+  animation-name: fade;
+  animation-duration: 20s;
 }
