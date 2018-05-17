@@ -120,6 +120,7 @@ function initMap() {
         }
       }
 
+
       function startSlide() {
         reset();
         imageSlides[0].style.display = "block";
@@ -139,14 +140,19 @@ function initMap() {
         activeImageSlide ++;
 
       }
-
+      if (leftArrow) {
         leftArrow.addEventListener("click", function(){
           if (activeImageSlide == 0) {
             activeImageSlide = imageSlides.length;
           }
           pressLeftArrow();
         });
+      }
 
+
+
+
+      if(rightArrow) {
         rightArrow.addEventListener("click", function(){
           if (activeImageSlide == imageSlides.length - 1) {
             activeImageSlide = -1;
@@ -154,24 +160,9 @@ function initMap() {
           pressRightArrow();
         });
 
-    startSlide();
-
-
-    this.slideIndex = 0;
-    this.slides = document.querySelectorAll(".billede");
+      }
 
 
 
-    function showSlides() {
-                for (var i = 0; i < slides.length; i++) {
-                   slides[i].style.display = "none";
-                }
 
-                slideIndex++;
-                if (slideIndex > slides.length) {
-                  slideIndex = 1
-                }
-
-                slides[slideIndex-1].style.display = "block";
-                setTimeout(showSlides, 2000);
-            }
+  startSlide();

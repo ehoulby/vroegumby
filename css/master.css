@@ -413,7 +413,20 @@ top: -323px;
     margin-top: 40px;
   }
 
+
+
+  .slideshow1 {
+    margin: auto;
+    margin-top: 90px;
+  }
+
   .imageslides {
+    animation-name: slideAnimation;
+    animation-duration: 2.5s;
+    display: none;
+  }
+
+  .imageslides2 {
     animation-name: slideAnimation;
     animation-duration: 2.5s;
     display: none;
@@ -444,6 +457,22 @@ top: -323px;
     left: 0;
   }
 
+  .arrow-left2,
+  .arrow-right2 {
+    position: absolute;
+    top: 42%;
+    padding: 25px;
+    cursor: pointer;
+  }
+
+  .arrow-right2 {
+    right: 0;
+  }
+
+  .arrow-left2{
+    left: 0;
+  }
+
   #article-headline {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
@@ -458,6 +487,10 @@ top: -323px;
   width: 1200px;
   display: flex;
   flex-direction: row;
+}
+
+#elemwithpics {
+  margin-top: 70px;
 }
 
 .inner-text {
@@ -509,6 +542,12 @@ top: -323px;
   margin: auto;
   margin-top: 110px;
 }
+
+.billede {
+  animation-name: slideAnimation;
+  animation-duration: 2.5s;
+}
+
 
 
 /* -------- 4. Erhverv --------- */
@@ -779,17 +818,10 @@ footer {
 
 
 
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin-top: 69px;
-  margin-left: 220px;
+  margin-top: 69px auto 20px auto;
 }
 
 .active {
@@ -802,11 +834,4 @@ img {vertical-align: middle;}
   -webkit-animation-duration: 20s;
   animation-name: fade;
   animation-duration: 20s;
-}
-
-
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
 }
