@@ -300,7 +300,36 @@ top: -323px;
 
     padding-right: 100px;
     display: block;
+}#eventoverskrift1 {
+    font-size: 20px;
+    color: 000;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100%;
 }
+#jul {
+    width: 580px;
+height: 310px;
+position: relative;
+left: 8%;
+top: -310px;
+
+    padding-right: 100px;
+    display: block;
+}
+
+#oktoberfest {
+width: 580Px;
+height: 311px;
+position: relative;
+left: 51%;
+top: -625px;
+
+    padding-right: 100px;
+    display: block;
+}
+
 .event2 h4 {
     background-color: white;
     color: black;
