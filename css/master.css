@@ -563,6 +563,32 @@ top: -608px;
   background: white;
   color: #86D37E;
 }
+.sidebar-article1 {
+  background-color: #86D37E;
+  display: flex;
+  flex-direction: column;
+  width: 1500px;
+  height: 378px;
+  margin-left: 20px;
+}
+
+.sidebar-article1 a {
+  text-decoration: none;
+  padding: 20px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  color: white;
+}
+
+.sidebar-article1 a:hover {
+  background: linear-gradient(to right, #5db255, #7dc14b, #9fcf40, #c5db32, #ede623);
+}
+
+.sidebar-article1 a:active {
+  background: white;
+  color: #86D37E;
+}
 
 /* -------- 4.1 Ballonpark underside -------- */
 .skoven, .station, #fiskesoe1, #dengamleskole1{
