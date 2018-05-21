@@ -928,3 +928,20 @@ footer {
   animation-name: fade;
   animation-duration: 20s;
 }
+
+
+.nyhed1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.nyhed1kasse{
+  position: absolute;
+  background-color: #86D37E;
+  color: white;
+  padding: 20px;
+  width: 760px;
+  opacity: 0.8;
+}
