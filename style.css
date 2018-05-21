@@ -1,0 +1,61 @@
+h3 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+.styleguide-logo {
+    width: 10%;
+    margin: auto;
+    display: block;
+}
+.font {
+    width: 100px;
+    margin: auto;
+    display: block;
+    margin-left: 50px;
+}
+
+.btn-primary {
+    position: absolute;
+    background-color: #5DB255;
+    color: white;
+    padding: 15px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    top: 65%;
+    border: 1px solid#5DB255;
+    margin-top: 70px;
+
+}
+#spisning {
+    width: 580px;
+height: 310px;
+position: relative;
+left: 6%;
+top: -14px;
+
+    padding-right: 100px;
+    display: block;
+}
+
+#fodbold {
+    width: 580Px;
+    height: 310px;
+    position: relative;
+    left: 52%;
+    top: -323px;
+    padding-right: 100px;
+    display: block;
+
+
+        display: block;
