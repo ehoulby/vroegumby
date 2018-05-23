@@ -164,108 +164,34 @@ function initMap() {
 
   startSlide();
 
-/*----------------------------------------------------------------------*/
-/*
-function showEvent() {
+
+  var div = document.createElement("div");
+
+  var h1 = document.createElement("h1");
+  h1.innerHTML = "Vrøgum Løbet"
+  div.appendChild(h1);
 
 
-events = JSON.parse(localStorage.getItem('events')) || [];
-events.push ({
+  p1 = document.createElement("p");
+  p1.innerHTML = "Vrøgum Løbet er en årlig begivenhed der tager start i Ballonparken. Begivenheden er gratis og der er mulighed for at købe mad og drikke når man kommer i mål";
+  div.appendChild(p1);
 
-                title: ["Vrøgum Løbet", "Vin Smagning", "Udendørs Løb"],
-                date:  ["12. Maj", "20. Maj", "29. Maj"]
-              });
+  var btnevent  = document.createElement("button");
+  div.appendChild(btnevent);
 
-localStorage.setItem('events', JSON.stringify(events));
-/*
-document.getElementById("nameofpostinput").value = "";
-document.getElementById("usertextarea").value = "";
-document.getElementById("selectforumcategorydropdown").value = 0;*/
+  div.style = "display: none; "
+  document.querySelector('#eventdescription').appendChild(div);
+  btnevent.style = "display: block;"
 
-/*        var div = document.createElement("div");
-        var div2 = document.createElement("div");
-        var div3 = document.createElement("div");
-
-        var h1 = document.createElement("h1");
-        h1.innerHTML = events[0].title[0];
-        div.appendChild(h1);
+button.addEventListener('click', function() {
 
 
-        p1 = document.createElement("p");
-        p1.innerHTML = events[0].date[0];
-        div.appendChild(p1);
+  div.style.display = "block";
 
-                var h2 = document.createElement("h2");
-                h2.innerHTML = events[1].title[1];
-                div2.appendChild(h2);
-
-
-                p2 = document.createElement("p");
-                p2.innerHTML = events[1].date[1];
-                div2.appendChild(p2);
-
-
-                        var h3 = document.createElement("h3");
-                        h3.innerHTML = events[2].title[2];
-                          div3.appendChild(h3);
-
-
-                        p3 = document.createElement("p");
-                        p3.innerHTML = events[2].date[2];
-                        div3.appendChild(p3);
-
-
-        document.querySelector('#eventdescription').appendChild(div);
-        document.querySelector('#eventdescription').appendChild(div2);
-        document.querySelector('#eventdescription').appendChild(div3);
-        div.style = "background-color: white; font-weight: 400; margin: 20px 25px ;padding: 10px 25px ; box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.59); "
-
-var date1 = document.querySelector('#12');
-var date2 = document.querySelector('#20');
-var date3 = document.querySelector('#29');
-
-
-
-date1.addEventListener('click', function() {
-  if if (event.target == btn3) {
-      window.location.href = ('omvroegumsider/vroegumfiskesoe.html')
-    }
 });
 
+function showEvent() {
 
-  {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  display: none;
-  z-index: 99999;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  max-height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 75, 131, 0.5);
-}
-
-#createnewlessonchild {
-  background-color: white;
-  margin: 0px auto 100px auto;
-  padding: 50px 0px 70px 60px;
-  width: 60%;
-  -webkit-box-shadow: 0px 3px 16px 0px rgba(50, 50, 50, 0.3);
-  -moz-box-shadow: 0px 3px 16px 0px rgba(50, 50, 50, 0.3);
-  box-shadow: 0px 3px 16px 0px rgba(50, 50, 50, 0.3);
-  animation: slidein 1s;
-  transform: translateY(3%);
-
-  }
-
-@keyframes slidein {
-  0% {
+  
 
 }
-}
-*/

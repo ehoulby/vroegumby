@@ -99,7 +99,7 @@
                 <td class="dato" id="9">9</td>
                 <td class="dato" id="10">10</td>
                 <td class="dato" id="11">11</td>
-                <td class="dato" id="tolv" onclick="toggle()">12</td>
+                <td class="dato" id="tolv" onclick="showEvent()">12</td>
                 <td class="dato" id="13">13</td>
               </tr>
 
@@ -114,7 +114,7 @@
               </tr>
 
               <tr>
-                <td class="dato" id="enogtyve" onclick="toggle()">21</td>
+                <td class="dato" id="enogtyve" onclick="showEvent()">21</td>
                 <td class="dato" id="22">22</td>
                 <td class="dato" id="23">23</td>
                 <td class="dato" id="24">24</td>
@@ -125,7 +125,7 @@
 
               <tr>
                 <td class="dato" id="28">28</td>
-                <td class="dato" id="niogtyve" onclick="toggle()">29</td>
+                <td class="dato" id="niogtyve" onclick="showEvent()">29</td>
                 <td class="dato" id="30">30</td>
                 <td class="dato" id="31">31</td>
 
@@ -133,17 +133,31 @@
             </table>
 
           </div>
+
             <div id="eventdescription">
               <div class="button-div" id="button-1">
-    <button value="yes" onclick="recordFeedback(1, this);">Button 1</button>
-</div>
-<div class="button-div" id="button-2">
-    <button value="yes" onclick="recordFeedback(2, this);">Button 2</button>
-</div>
-<div class="button-div" id="button-3">
-    <button value="yes" onclick="recordFeedback(3, this);">Button 3</button>
-</div>
+                <h1>Vrøgum Løbet</h1>
+                  <p>Vrøgum Løbet er en årlig begivenhed der tager start i Ballonparken. Begivenheden er gratis og der er mulighed for at købe mad og drikke når man kommer i mål </p>
+                  <button id="btn-secondary" onclick="showEvent1()">Gem begivenhed i kalender</button>
+                  <button id="btn-secondary" onclick="deleteEvent1()">Slet begivenhed i kalender</button>
 
+              </div>
+
+              <div class="button-div" id="button-2">
+                <p>Vrøgum Løbet er en årlig begivenhed der tager start i Ballonparken. Begivenheden er gratis og der er mulighed for at købe mad og drikke når man kommer i mål </p>
+                <button id="btn-secondary" onclick="showEvent1()">Gem begivenhed i kalender</button>
+                <button id="btn-secondary" onclick="deleteEvent1()">Slet begivenhed i kalender</button>
+
+                  <button id="btn-secondary" onclick="showEvent2()">Button 2</button>
+              </div>
+
+              <div class="button-div" id="button-3">
+                <p>Vrøgum Løbet er en årlig begivenhed der tager start i Ballonparken. Begivenheden er gratis og der er mulighed for at købe mad og drikke når man kommer i mål </p>
+                <button id="btn-secondary" onclick="showEvent1()">Gem begivenhed i kalender</button>
+                <button id="btn-secondary" onclick="deleteEvent1()">Slet begivenhed i kalender</button>
+
+                  <button id="btn-secondary" onclick="showEvent3()">Button 3</button>
+              </div>
             </div>
 
 
