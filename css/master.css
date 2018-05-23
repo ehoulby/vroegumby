@@ -328,7 +328,7 @@ table {
 
 .dato:hover {
   cursor: pointer;
-  color: lightgreen;
+  color: #90EE90;
 }
 
 
@@ -569,12 +569,12 @@ top: -608px;
     font-size: 50px;
     width: 100%;
     text-align: center;
-    color: #86D37E;
+    color: #5db255;
   }
 
   #article-headline {
     font-family: 'Noto Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 50px;
     color: #107107;
     margin: 40px 0;
