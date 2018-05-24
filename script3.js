@@ -23,3 +23,12 @@
 
         }
       });
+
+      window.addEventListener("click", function(event) {
+        var arrow = document.querySelector("#scrolldown-arrow");
+
+        if (event.target == arrow) {
+          window.location.href = ('index.html#nyhederoverskrift')
+
+        }
+      });

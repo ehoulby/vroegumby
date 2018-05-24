@@ -620,7 +620,75 @@ top: -608px;
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 33%;
+    top: 30%;
+}
+
+.news {
+  background-color: rgba(16, 113, 7, 0.8);
+    width: 100%;
+    display: inline-block;
+}
+
+input[type="email"] {
+    width: 400px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    padding-left: 10px;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+
+input[type="submit"] {
+  background-color: #EDE623;
+  border: none;
+  height: 40px;
+  width: 130px;
+  margin-left: 20px;
+  border-radius: 25px;
+  color: black;
+  font-size: 15px;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+}
+
+form {
+  padding-top: 40px;
+  width: 44%;
+  margin: auto;
+}
+
+.news-content {
+      padding: 50px;
+}
+
+.news-content h1{
+  font-family: 'Lora', serif;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.news-content p {
+  font-family: 'Lora', serif;
+  color: white;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+.scrolldown {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 80%;
+  width: 50px;
 }
 
   #articleheadline{
