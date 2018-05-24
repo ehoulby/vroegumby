@@ -13,3 +13,36 @@
           slides[slideIndex-1].style.display = "block";
           setTimeout(showSlides, 5000);
       }
+
+
+      window.addEventListener("click", function(event) {
+        var readmore = document.querySelector("#readmore");
+        var readmorea = document.querySelector("#readmorearticle");
+        if (event.target == readmore) {
+          readmorea.style.display = 'block';
+
+        }
+      });
+
+      window.addEventListener("click", function(event) {
+        var arrow = document.querySelector("#scrolldown-arrow");
+
+        if (event.target == arrow) {
+          window.location.href = ('index.html#nyhederoverskrift')
+
+        }
+      });
+
+
+function validateForm() {
+    var form = document.querySelector("#email").value;
+    var error = document.querySelector("#error");
+    if (form == "") {
+        error.innerHTML = "Udfyld venligst din email";
+        error.style.color = "red";
+
+    } else {
+      error.innerHTML = "Du er nu tilmeldt nyhedsbrevet!";
+      error.style.color = "white";
+    }
+}
