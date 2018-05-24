@@ -195,3 +195,8 @@ function saveEvent1() {
     localStorage.setItem('background', 'blue');
   }
 }
+
+function deleteEvent1 () {
+  localStorage.removeItem('background');
+  document.querySelector("#tolv").style.backgroundColor = "transparent";
+}
