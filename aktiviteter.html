@@ -12,7 +12,7 @@
     <meta description="">
 </head>
 
-<body>
+<body id="subpage" onload="datoColor()">
     <header>
         <a href="index.html" id="logo">
       <img src="assets/images/logovroegum.ico" alt="logo" width="50px">
@@ -99,7 +99,7 @@
                 <td class="dato" id="9">9</td>
                 <td class="dato" id="10">10</td>
                 <td class="dato" id="11">11</td>
-                <td class="dato" id="tolv" onclick="showEvent()">12</td>
+                <td class="dato" id="tolv" onclick="showEvent1()">12</td>
                 <td class="dato" id="13">13</td>
               </tr>
 
@@ -114,7 +114,7 @@
               </tr>
 
               <tr>
-                <td class="dato" id="enogtyve" onclick="showEvent()">21</td>
+                <td class="dato" id="enogtyve" onclick="showEvent2()">21</td>
                 <td class="dato" id="22">22</td>
                 <td class="dato" id="23">23</td>
                 <td class="dato" id="24">24</td>
@@ -125,7 +125,7 @@
 
               <tr>
                 <td class="dato" id="28">28</td>
-                <td class="dato" id="niogtyve" onclick="showEvent()">29</td>
+                <td class="dato" id="niogtyve" onclick="showEvent3()">29</td>
                 <td class="dato" id="30">30</td>
                 <td class="dato" id="31">31</td>
 
@@ -138,25 +138,25 @@
               <div class="button-div" id="button-1">
                 <h1>Vrøgum Løbet</h1>
                   <p>Vrøgum Løbet er en årlig begivenhed der tager start i Ballonparken. Begivenheden er gratis og der er mulighed for at købe mad og drikke når man kommer i mål </p>
-                  <button id="btn-secondary" onclick="showEvent1()">Gem begivenhed i kalender</button>
+                  <button id="btn-secondary" onclick="saveEvent1()">Gem begivenhed i kalender</button>
                   <button id="btn-secondary" onclick="deleteEvent1()">Slet begivenhed i kalender</button>
 
               </div>
 
               <div class="button-div" id="button-2">
-                <p>Vrøgum Løbet er en årlig begivenhed der tager start i Ballonparken. Begivenheden er gratis og der er mulighed for at købe mad og drikke når man kommer i mål </p>
-                <button id="btn-secondary" onclick="showEvent1()">Gem begivenhed i kalender</button>
-                <button id="btn-secondary" onclick="deleteEvent1()">Slet begivenhed i kalender</button>
+                <h1>En aften med brætspil </h1>
+                  <p>Der inviteres til en aften med brætspil, hvor der er mulighed for buffet.</p>
+                  <button id="btn-secondary" onclick="saveEvent2()">Gem begivenhed i kalender</button>
+                  <button id="btn-secondary" onclick="deleteEvent2()">Slet begivenhed i kalender</button>
 
-                  <button id="btn-secondary" onclick="showEvent2()">Button 2</button>
               </div>
 
               <div class="button-div" id="button-3">
-                <p>Vrøgum Løbet er en årlig begivenhed der tager start i Ballonparken. Begivenheden er gratis og der er mulighed for at købe mad og drikke når man kommer i mål </p>
-                <button id="btn-secondary" onclick="showEvent1()">Gem begivenhed i kalender</button>
-                <button id="btn-secondary" onclick="deleteEvent1()">Slet begivenhed i kalender</button>
+                <h1>Kom til Vinsmagning</h1>
+                  <p>Har du en kærlighed for vin og ønsker du at tilbringe mere tid med dine medbeboere? Så kom til vinsmagning! Biletter kan købes d. 15 Maj</p>
+                  <button id="btn-secondary" onclick="saveEvent3()">Gem begivenhed i kalender</button>
+                  <button id="btn-secondary" onclick="deleteEvent3()">Slet begivenhed i kalender</button>
 
-                  <button id="btn-secondary" onclick="showEvent3()">Button 3</button>
               </div>
             </div>
 

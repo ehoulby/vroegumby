@@ -271,6 +271,18 @@ li a:hover {
   border: 1px solid#5DB255;
 }
 
+#button-2 {
+  display: none;
+}
+
+#button-1 {
+  display: none;
+}
+
+#button-3 {
+  display: none;
+}
+
 #aktivitetsoverskrift {
     font-size: 33px;
     color: 000;
