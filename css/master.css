@@ -8,6 +8,10 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
+body button {
+  outline: none;
+}
+
 /* -------- 1. Navigationsbar --------- */
 
 header {
@@ -245,6 +249,39 @@ li a:hover {
 }
 
 /* -------- 2. Aktiviteter --------- */
+
+#btn-secondary {
+  background-color: #5DB255;
+  color: white;
+  padding: 15px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 20px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  top: 65%;
+  border: 1px solid#5DB255;
+}
+
+#btn-secondary:hover {
+  background-color: white;
+  color: #5DB255;
+  border: 1px solid#5DB255;
+}
+
+#button-2 {
+  display: none;
+}
+
+#button-1 {
+  display: none;
+}
+
+#button-3 {
+  display: none;
+}
 
 #aktivitetsoverskrift {
     font-size: 33px;
