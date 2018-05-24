@@ -174,6 +174,8 @@ function showEvent1() {
   document.querySelector("#month").style.marginTop = "30px";
   document.querySelector("#month").style.fontSize = "40px";
   document.querySelector("#button-1").style.display = "block";
+  document.querySelector("#button-2").style.display = "none";
+  document.querySelector("#button-3").style.display = "none";
 }
 
 
@@ -181,7 +183,7 @@ var getColour;
 getColour = localStorage.background;
 document.querySelector("#tolv").style.backgroundColor = getColour;
 
-function datoColor() {
+function datoColor1() {
 document.querySelector("#month").innerHTML = "MAJ";
 document.querySelector("#month").style.marginTop = "150px";
 document.querySelector("#month").style.fontSize = "70px";
@@ -207,4 +209,91 @@ function saveEvent1() {
 function deleteEvent1 () {
   localStorage.removeItem('background');
   document.querySelector("#tolv").style.backgroundColor = "transparent";
+}
+
+/*--------*/
+
+function showEvent2() {
+  document.querySelector("#month").innerHTML = "21. MAJ";
+  document.querySelector("#month").style.marginTop = "30px";
+  document.querySelector("#month").style.fontSize = "40px";
+  document.querySelector("#button-2").style.display = "block";
+  document.querySelector("#button-1").style.display = "none";
+  document.querySelector("#button-3").style.display = "none";
+}
+
+
+var getColour1;
+getColour1 = localStorage.background1;
+document.querySelector("#enogtyve").style.backgroundColor = getColour1;
+
+function datoColor2() {
+document.querySelector("#month").innerHTML = "MAJ";
+document.querySelector("#month").style.marginTop = "150px";
+document.querySelector("#month").style.fontSize = "70px";
+
+if (localStorage.getItem('background1') !== null) {
+  getColour1 = localStorage.background1;
+  document.querySelector("#enogtyve").style.backgroundColor = getColour1;
+
+  }
+}
+
+function saveEvent2() {
+  if (getColour1 == '#EDE623') {
+    getColour1 = '#EDE623';
+    document.querySelector("#enogtyve").style.backgroundColor = "#EDE623";
+    localStorage.setItem('background1', '#EDE623');
+  } else {
+    document.querySelector("#enogtyve").style.backgroundColor = "#EDE623";
+    localStorage.setItem('background1', '#EDE623');
+  }
+}
+
+function deleteEvent2 () {
+  localStorage.removeItem('background1');
+  document.querySelector("#enogtyve").style.backgroundColor = "transparent";
+}
+
+/*---------------*/
+function showEvent3() {
+  document.querySelector("#month").innerHTML = "29. MAJ";
+  document.querySelector("#month").style.marginTop = "30px";
+  document.querySelector("#month").style.fontSize = "40px";
+  document.querySelector("#button-3").style.display = "block";
+  document.querySelector("#button-2").style.display = "none";
+  document.querySelector("#button-1").style.display = "none";
+}
+
+
+var getColour2;
+getColour2 = localStorage.background2;
+document.querySelector("#niogtyve").style.backgroundColor = getColour2;
+
+function datoColor3() {
+document.querySelector("#month").innerHTML = "MAJ";
+document.querySelector("#month").style.marginTop = "150px";
+document.querySelector("#month").style.fontSize = "70px";
+
+if (localStorage.getItem('background2') !== null) {
+  getColour2 = localStorage.background2;
+  document.querySelector("#niogtyve").style.backgroundColor = getColour2;
+
+  }
+}
+
+function saveEvent3() {
+  if (getColour2 == '#EDE623') {
+    getColour2 = '#EDE623';
+    document.querySelector("#niogtyve").style.backgroundColor = "#EDE623";
+    localStorage.setItem('background2', '#EDE623');
+  } else {
+    document.querySelector("#niogtyve").style.backgroundColor = "#EDE623";
+    localStorage.setItem('background2', '#EDE623');
+  }
+}
+
+function deleteEvent3 () {
+  localStorage.removeItem('background2');
+  document.querySelector("#niogtyve").style.backgroundColor = "transparent";
 }

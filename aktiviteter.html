@@ -2,203 +2,183 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Aktiviteter</title>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
-    <link href="css/master.css" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="12x12" href="assets/images/logovroegum.ico">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="script.js" charset="utf-8"></script>
-    <meta description="">
+  <meta charset="utf-8">
+  <title>Aktiviteter</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+  <link href="css/master.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="12x12" href="assets/images/logovroegum.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="script.js" charset="utf-8"></script>
+  <meta description="">
 </head>
 
-<body id="subpage" onload="datoColor()">
-    <header>
-        <a href="index.html" id="logo">
+<body id="subpage" onload="datoColor1();datoColor2();datoColor3();">
+  <header>
+    <a href="index.html" id="logo">
       <img src="assets/images/logovroegum.ico" alt="logo" width="50px">
       </a>
-        <nav>
+    <nav>
 
-            <ul>
-                <li><a href="aktiviteter.html">BEGIVENHEDER</a></li>
-                <li><a href="transport.html">TRANSPORT</a></li>
-                <li><a href="omvroegum.html">OM VRØGUM</a></li>
-                <li><a href="erhverv.html">ERHVERV</a></li>
-            </ul>
-        </nav>
+      <ul>
+        <li><a href="aktiviteter.html">BEGIVENHEDER</a></li>
+        <li><a href="transport.html">TRANSPORT</a></li>
+        <li><a href="omvroegum.html">OM VRØGUM</a></li>
+        <li><a href="erhverv.html">ERHVERV</a></li>
+      </ul>
+    </nav>
 
 
 
-    </header>
-    <main>
+  </header>
+  <main>
 
-        <section class="aktivitetssektion">
-            <h1 id="aktivitetsoverskrift">Begivenheder</h1>
-        </section>
+    <section class="aktivitetssektion">
+      <h1 id="aktivitetsoverskrift">Begivenheder</h1>
+    </section>
 
-<section class="top-half">
-        <section class="kommendeevents">
-            <div class="event1">
-                <h2>KOMMENDE EVENTS</h2>
-                <div id="rank1">
-                    <P id="dato">13. MAJ</p>
-                    <p id="navn">Fællesspisning</P>
-                </div>
-                <div id="rank2">
-                    <P id="dato">13. MAJ</p>
-                    <p id="navn">Fællesspisning</P>
-                </div>
-                <div id="rank3">
-                    <P id="dato">23. MAJ</p>
-                    <p id="navn">Fællesspisning</P>
-                </div>
+    <section class="calender">
+      <div class="calender2">
 
-                <div id="rank4">
-                    <P id="dato">30. MAJ</p>
-                    <p id="navn">Fællesspisning</P>
-                </div>
-                <div id="rank5">
-                    <P id="dato">5. APRIL</p>
-                    <p id="navn">Fællesspisning</P>
-                </div>
-            </section>
-
-            <section class="calender">
-            <div class="calender2">
-
-            <div class="month">
-              <h2 id="month">
+        <div class="month">
+          <h2 id="month">
               </h2>
 
-              <div id="eventdescription">
-                <div class="button-div" id="button-1">
-                  <h1>Vrøgum Løbet</h1>
-                    <p>Vrøgum Løbet er en årlig begivenhed der tager start i Ballonparken. Begivenheden er gratis og der er mulighed for at købe mad og drikke når man kommer i mål </p>
-                    <button id="btn-secondary" onclick="saveEvent1()">Gem begivenhed </button>
-                    <button id="btn-secondary" onclick="deleteEvent1()">Slet begivenhed </button>
+          <div id="eventdescription">
+            <div class="button-div" id="button-1">
+              <h1>Vrøgum Løbet</h1>
+              <p>Vrøgum Løbet er en årlig begivenhed der tager start i Ballonparken. Begivenheden er gratis og
+                der er mulighed for at købe mad og drikke når man kommer i mål </p>
+              <button id="btn-secondary" onclick="saveEvent1()">Gem begivenhed </button>
+              <button id="btn-secondary" onclick="deleteEvent1()">Slet begivenhed </button>
 
-                </div>
-
-                <div class="button-div" id="button-2">
-                  <h1>En aften med brætspil </h1>
-                    <p>Der inviteres til en aften med brætspil, hvor der er mulighed for buffet.</p>
-                    <button id="btn-secondary" onclick="saveEvent2()">Gem begivenhed </button>
-                    <button id="btn-secondary" onclick="deleteEvent2()">Slet begivenhed </button>
-
-                </div>
-
-                <div class="button-div" id="button-3">
-                  <h1>Kom til Vinsmagning</h1>
-                    <p>Har du en kærlighed for vin og ønsker du at tilbringe mere tid med dine medbeboere? Så kom til vinsmagning! Biletter kan købes d. 15 Maj</p>
-                    <button id="btn-secondary" onclick="saveEvent3()">Gem begivenhed</button>
-                    <button id="btn-secondary" onclick="deleteEvent3()">Slet begivenhed </button>
-
-                </div>
-              </div>
             </div>
 
-            <table>
-              <tr id="ugedage">
-                <th>Man</th>
-                <th>Tirs</th>
-                <th>Ons</th>
-                <th>Tors</th>
-                <th>Fre</th>
-                <th>Lør</th>
-                <th>Søn</th>
-              </tr>
-              <tr>
-                <td class="dato" > </td>
-                <td class="dato" id="1">1</td>
-                <td class="dato" id="2">2</td>
-                <td class="dato" id="3">3</td>
-                <td class="dato" id="4">4</td>
-                <td class="dato" id="5">5</td>
-                <td class="dato" id="6">6</td>
+            <div class="button-div" id="button-2">
+              <h1>En aften med brætspil </h1>
+              <p>Der inviteres til en aften med brætspil, hvor der er mulighed for buffet.</p>
+              <button id="btn-secondary" onclick="saveEvent2()">Gem begivenhed </button>
+              <button id="btn-secondary" onclick="deleteEvent2()">Slet begivenhed </button>
 
-              </tr>
-              <tr>
-                <td class="dato" id="7">7</td>
-                <td class="dato" id="8">8</td>
-                <td class="dato" id="9">9</td>
-                <td class="dato" id="10">10</td>
-                <td class="dato" id="11">11</td>
-                <td class="dato" id="tolv" onclick="showEvent1()">12</td>
-                <span class="dot"></span>
-                <td class="dato" id="13">13</td>
-              </tr>
+            </div>
 
-              <tr>
-                <td class="dato" id="14">14</td>
-                <td class="dato" id="15">15</td>
-                <td class="dato" id="16">16</td>
-                <td class="dato" id="17">17</td>
-                <td class="dato" id="18">18</td>
-                <td class="dato" id="19">19</td>
-                <td class="dato" id="20">20</td>
-              </tr>
+            <div class="button-div" id="button-3">
+              <h1>Kom til Vinsmagning</h1>
+              <p>Har du en kærlighed for vin og ønsker du at tilbringe mere tid med dine medbeboere? Så kom til vinsmagning! Biletter kan købes d. 15 Maj</p>
+              <button id="btn-secondary" onclick="saveEvent3()">Gem begivenhed</button>
+              <button id="btn-secondary" onclick="deleteEvent3()">Slet begivenhed </button>
 
-              <tr>
-                <td class="dato" id="enogtyve" onclick="showEvent2()">21</td>
-                <td class="dato" id="22">22</td>
-                <td class="dato" id="23">23</td>
-                <td class="dato" id="24">24</td>
-                <td class="dato" id="25">25</td>
-                <td class="dato" id="26">26</td>
-                <td class="dato" id="27">27</td>
-              </tr>
-
-              <tr>
-                <td class="dato" id="28">28</td>
-                <td class="dato" id="niogtyve" onclick="showEvent3()">29</td>
-                <td class="dato" id="30">30</td>
-                <td class="dato" id="31">31</td>
-
-              </tr>
-            </table>
-
+            </div>
           </div>
-
-
-
-
-
-                </section>
-</section>
-
-            <section class="senesteevents">
-                <h2 id="eventoverskrift">SENESTE EVENTS</h2>
-                <img id="spisning" src="assets/images/spisning.jpg" alt="spisning">
-                    <img id="fodbold" src="assets/images/fodbold.jpg" alt="fodbold">
-
-
-            </section>
-
-            <section class="senesteevents">
-
-                <img id="jul" src="assets/images/jul.jpg" alt="jul">
-                <img id="oktoberfest" src="assets/images/oktoberfest.jpg" alt="oktoberfest">
-
-            </section>
-
-
-    </main>
-    <footer>
-        <div class="footer">
-            <div class="kontakt">
-                <h2>KONTAKT</h2>
-                <p>Varde Kommune<br>Bytoften 2<br>6800 Varde <br><br> +45 79 94 68 00<br>vardekommune@varde.dk</p>
-            </div>
-            <div class="icons">
-                <h2>SOCIALE MEDIER</h2>
-                <a href="https://www.instagram.com/explore/tags/vrøgum/"><img src="assets/images/instagram.png" alt="instagram"></a>
-                <a href="https://www.facebook.com/vroegum/"><img src="assets/images/facebook.png" alt="facebook"></a>
-            </div>
         </div>
-        <div class="footerdesign">
-            <img src="assets/images/footerdesignweb.png" alt="vrogum by illustration">
-        </div>
-    </footer>
+
+        <table>
+          <tr id="ugedage">
+            <th>Man</th>
+            <th>Tirs</th>
+            <th>Ons</th>
+            <th>Tors</th>
+            <th>Fre</th>
+            <th>Lør</th>
+            <th>Søn</th>
+          </tr>
+          <tr>
+            <td class="dato"> </td>
+            <td class="dato" id="1">1</td>
+            <td class="dato" id="2">2</td>
+            <td class="dato" id="3">3</td>
+            <td class="dato" id="4">4</td>
+            <td class="dato" id="5">5</td>
+            <td class="dato" id="6">6</td>
+
+          </tr>
+          <tr>
+            <td class="dato" id="7">7</td>
+            <td class="dato" id="8">8</td>
+            <td class="dato" id="9">9</td>
+            <td class="dato" id="10">10</td>
+            <td class="dato" id="11">11</td>
+            <td class="dato" id="tolv" onclick="showEvent1()">12</td>
+            <span class="dot"></span>
+            <td class="dato" id="13">13</td>
+          </tr>
+
+          <tr>
+            <td class="dato" id="14">14</td>
+            <td class="dato" id="15">15</td>
+            <td class="dato" id="16">16</td>
+            <td class="dato" id="17">17</td>
+            <td class="dato" id="18">18</td>
+            <td class="dato" id="19">19</td>
+            <td class="dato" id="20">20</td>
+          </tr>
+
+          <tr>
+            <td class="dato" id="enogtyve" onclick="showEvent2()">21</td>
+            <td class="dato" id="22">22</td>
+            <td class="dato" id="23">23</td>
+            <td class="dato" id="24">24</td>
+            <td class="dato" id="25">25</td>
+            <td class="dato" id="26">26</td>
+            <td class="dato" id="27">27</td>
+          </tr>
+
+          <tr>
+            <td class="dato" id="28">28</td>
+            <td class="dato" id="niogtyve" onclick="showEvent3()">29</td>
+            <td class="dato" id="30">30</td>
+            <td class="dato" id="31">31</td>
+
+          </tr>
+        </table>
+
+      </div>
+    </section>
+    </section>
+
+    <section class="senesteevents">
+      <div class="event-pics">
+        <img id="spisning" src="assets/images/spisning.jpg" alt="spisning">
+      </div>
+
+      <div class="event-pics">
+        <img id="fodbold" src="assets/images/fodbold.jpg" alt="fodbold">
+      </div>
+
+      <div class="event-pics">
+        <img id="jul" src="assets/images/jul.jpg" alt="jul">
+      </div>
+
+      <div class="event-pics">
+        <img id="oktoberfest" src="assets/images/oktoberfest.jpg" alt="oktoberfest">
+      </div>
+
+
+    </section>
+  <section class="senesteevents">
+
+
+
+
+    </section>
+
+
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="kontakt">
+        <h2>KONTAKT</h2>
+        <p>Varde Kommune<br>Bytoften 2<br>6800 Varde <br><br> +45 79 94 68 00<br>vardekommune@varde.dk</p>
+      </div>
+      <div class="icons">
+        <h2>SOCIALE MEDIER</h2>
+        <a href="https://www.instagram.com/explore/tags/vrøgum/"><img src="assets/images/instagram.png" alt="instagram"></a>
+        <a href="https://www.facebook.com/vroegum/"><img src="assets/images/facebook.png" alt="facebook"></a>
+      </div>
+    </div>
+    <div class="footerdesign">
+      <img src="assets/images/footerdesignweb.png" alt="vrogum by illustration">
+    </div>
+  </footer>
 
 </body>
 
