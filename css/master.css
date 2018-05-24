@@ -635,9 +635,11 @@ input[type="email"] {
     border-radius: 25px;
     border: none;
     padding-left: 10px;
-    font-family: 'Lora', serif;
+    font-family: 'Noto Sans', serif;
     font-weight: 400;
     font-size: 15px;
+    margin-bottom: 20px;
+
 }
 
 
@@ -651,7 +653,7 @@ input[type="submit"] {
   border-radius: 25px;
   color: black;
   font-size: 15px;
-  font-family: 'Lora', serif;
+  font-family: 'Noto Sans', serif;
   font-weight: 400;
 }
 
@@ -666,14 +668,14 @@ form {
 }
 
 .news-content h1{
-  font-family: 'Lora', serif;
+  font-family: 'Noto Sans', serif;
   color: white;
   font-weight: 700;
   text-align: center;
 }
 
 .news-content p {
-  font-family: 'Lora', serif;
+  font-family: 'Noto Sans', serif;
   color: white;
   font-style: italic;
   font-weight: 400;
@@ -1099,4 +1101,9 @@ footer {
   padding: 20px;
   width: 760px;
   opacity: 0.8;
+}
+
+#error {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
 }

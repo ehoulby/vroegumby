@@ -32,3 +32,17 @@
 
         }
       });
+
+
+function validateForm() {
+    var form = document.querySelector("#email").value;
+    var error = document.querySelector("#error");
+    if (form == "") {
+        error.innerHTML = "Udfyld venligst din email";
+        error.style.color = "red";
+
+    } else {
+      error.innerHTML = "Du er nu tilmeldt nyhedsbrevet!";
+      error.style.color = "white";
+    }
+}

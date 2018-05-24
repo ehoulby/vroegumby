@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Vrøgum by</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
     <meta name="description" content="Byen ved skoven. Vrøgum by er placeret ca. 13 km. fra Varde. Den lille by byder på tryghed og et fællesskab mellem indbyggere. Byen er omringet af skov og er bestemt stolt af ballonparken, som danner et fælles punkt for byens indbyggere.">
     <meta name="keywords" content="Vrøgum tryghed, fællesskab, skov, ballonpark, lille by">
     <link href="css/master.css" rel="stylesheet">
@@ -95,8 +94,9 @@
       <h1>Hold dig opdateret</h1>
       <p id="italicnews" >Få det seneste om begivenheder og nyheder!</p>
       <form>
-        <input type="email" placeholder="Indtast din email">
-        <input type="submit" value="Tilmed dig">
+        <input type="email" id="email" placeholder="Indtast din email">
+        <input  onclick="validateForm(); return false;" type="submit" value="Tilmed dig">
+        <span id="error"> </span>
       </form>
     </div>
   </div>
