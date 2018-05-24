@@ -166,6 +166,7 @@ if (rightArrow) {
 }
 
 startSlide();
+
 /*---------------------------*/
 
 function showEvent1() {

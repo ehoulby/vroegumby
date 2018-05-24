@@ -13,3 +13,13 @@
           slides[slideIndex-1].style.display = "block";
           setTimeout(showSlides, 5000);
       }
+
+
+      window.addEventListener("click", function(event) {
+        var readmore = document.querySelector("#readmore");
+        var readmorea = document.querySelector("#readmorearticle");
+        if (event.target == readmore) {
+          readmorea.style.display = 'block';
+
+        }
+      });

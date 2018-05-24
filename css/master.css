@@ -12,6 +12,10 @@ body button {
   outline: none;
 }
 
+body a {
+  outline: none;
+}
+
 /* -------- 1. Navigationsbar --------- */
 
 header {
@@ -248,6 +252,19 @@ li a:hover {
     margin-bottom: 100px;
 }
 
+#slogan {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  font-style: italic;
+}
+
+.arrow {
+  
+}
+
 /* -------- 2. Aktiviteter --------- */
 
 #btn-secondary {
@@ -263,6 +280,19 @@ li a:hover {
   border-radius: 10px;
   top: 65%;
   border: 1px solid#5DB255;
+}
+
+.btn-third {
+  line-height: normal;
+  color: #5DB255;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.btn-third:hover {
+  color: #86D37E;
 }
 
 #btn-secondary:hover {
@@ -536,7 +566,7 @@ top: -608px;
 
   @keyframes slideAnimation {
     from {
-      opacity: 0.2;
+      opacity: 0.4;
     }
     to {
       opacity: 1;
@@ -576,12 +606,38 @@ top: -608px;
   }
 
   #index-headline {
-    position: absolute;
-    top: 33%;
-    font-size: 50px;
-    width: 100%;
     text-align: center;
-    color: #5db255;
+    font-size: 50px;
+    color: white;
+  }
+
+  .index-headline {
+    background-color: rgba(16, 113, 7, 0.6);
+    position: absolute;
+    font-size: 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 33%;
+}
+
+  #articleheadline{
+
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #107107;
+  }
+
+  #readmorearticle {
+    display: none;
+  }
+
+  .article-index {
+    margin: 0 52px;
+    padding-bottom: 30px;
   }
 
   #article-headline {
@@ -651,7 +707,7 @@ top: -608px;
   display: flex;
   flex-direction: column;
   width: 1500px;
-  height: 378px;
+  height: 361px;
   margin-left: 20px;
 }
 
@@ -660,7 +716,7 @@ top: -608px;
   padding: 20px;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
 }
 
@@ -683,6 +739,7 @@ top: -608px;
 .billede {
   animation-name: slideAnimation;
   animation-duration: 2.5s;
+  overflow-x: hidden;
 }
 
 
@@ -939,39 +996,32 @@ footer {
 }
 /* -------- 6. Navbar på transportsider --------- */
 #nyhederoverskrift {
-    font-size: 20px;
-    margin-top: 50px;
+    font-size: 60px;
+    padding-top: 50px;
     text-align: center;
     width: 100%;
+    margin-top: 0;
+    color: #107107;
 }
 
 
 
-
-
-/* Slideshow container */
-.slideshow-container {
-  margin-top: 69px auto 20px auto;
+#forside-container {
+  background-color: rgba(134, 211, 126, 0.2);
 }
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 20s;
-  animation-name: fade;
-  animation-duration: 20s;
-}
-
 
 .nyhed1{
-  position: relative;
+  background-color: white;
   display: flex;
-  justify-content: center;
-  padding-top: 20px;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.nyhed1 img {
+  align-self: center;
 }
 
 .nyhed1kasse{
