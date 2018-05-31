@@ -11,12 +11,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <script src="script3.js" defer charset="utf-8"></script>
 
-    <meta description="">
+
   </head>
-  <body>
+  <body id="forside-container">
     <header>
       <a href="index.html" id="logo">
-      <img src="assets/images/logovroegum.ico" alt="logo" width="50px">
+      <img src="assets/images/logovroegum.ico" alt="logo" width="50">
       </a>
       <nav>
 
@@ -34,48 +34,74 @@
         <div class="slideshow-container">
 
             <div class="billede">
-              <img src="assets/images/slide1.jpg">
+              <img src="assets/images/slide1.jpg" alt="billede1">
             </div>
 
             <div class="billede">
-              <img src="assets/images/slide2.jpg">
-
-            </div>
-
-            <div class="billede">
-              <img src="assets/images/slide3.jpg">
-            </div>
-
-            <div class="billede">
-              <img src="assets/images/slide4.jpg">
-            </div>
-
-            <div class="billede">
-              <img src="assets/images/slide5.jpg">
+              <img src="assets/images/slide2.jpg" alt="billede1">
 
             </div>
 
             <div class="billede">
-              <img src="assets/images/slide6.jpg">
+              <img src="assets/images/slide3.jpg" alt="billede1">
+            </div>
+
+            <div class="billede">
+              <img src="assets/images/slide4.jpg" alt="billede1">
+            </div>
+
+            <div class="billede">
+              <img src="assets/images/slide5.jpg" alt="billede1">
+
+            </div>
+
+            <div class="billede">
+              <img src="assets/images/slide6.jpg" alt="billede1">
             </div>
 
             <div class="index-headline">
                 <h1 id="index-headline">Velkommen til Vrøgum</h1>
+                <p id="slogan">"Byen ved skoven"</p>
+            </div>
+
+            <div class="scrolldown">
+              <img src="assets/images/scrolldown.png" alt="pil" id="scrolldown-arrow">
             </div>
         </div>
 
       </section>
-      <section class="nyheder">
-        <h2 id="nyhederoverskrift">MÅNEDENS NYHED</h2>
+      <section class="nyheder-sektion">
         <div class="nyhed1">
-          <img src="assets/images/nyhed1.png" alt="" width="800px">
-          <div class="nyhed1kasse">
-            <h3>Kom og vær med til fællesspisning</h3>
-            <a href="#">Læs mere</a>
+          <h1 id="nyhederoverskrift">Månedens nyhed</h1>
+
+          <img src="assets/images/brætspil.jpg" alt="brætspil begivenhed">
+
+          <div class="article-index">
+            <h1 id="articleheadline">En aften med brætspil</h1>
+
+              <p id="readmorearticle">Kan du godt at spille brætspil og har du måske læggende derhjemme men savner nogen at spille med? Så kom til en aften med brætspil og buffet. Begivenheden finder sted på den gamle skole og varer fra 17-19. </p>
+
+            <button type="button" class="btn-third" id="readmore">Læs mere</button>
           </div>
         </div>
 
+
       </section>
+
+      <div class="news-wrap">
+  <div class="news">
+    <div class="news-content">
+      <h1>Hold dig opdateret</h1>
+      <p id="italicnews" >Få det seneste om begivenheder og nyheder!</p>
+      <form>
+        <input type="email" id="email" placeholder="Indtast din email">
+        <input  onclick="validateForm(); return false;" type="submit" value="Tilmed dig">
+        <span id="error"> </span>
+      </form>
+    </div>
+  </div>
+  </div>
+
 
     </main>
     <footer>
@@ -94,5 +120,8 @@
           <img src="assets/images/footerdesignweb.png" alt="vrogum by illustration">
         </div>
     </footer>
+
+
+
   </body>
 </html>
